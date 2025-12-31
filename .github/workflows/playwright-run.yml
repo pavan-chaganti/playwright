@@ -146,6 +146,6 @@ jobs:
       - name: Report URLs
         run: |
           echo "Reports Published!"
-          echo "Playwright Built-in:  https://pavan-chaganti.github.io/playwright/playwright/playwright-report/index.html"
-          echo "Playwright HTML Reporter: https://pavan-chaganti.github.io/playwright/playwright/playwright-html-report/index.html"
-          echo "Allure: https://pavan-chaganti.github.io/playwright/playwright/allure-report/index.html"
+          echo "Playwright Built-in:  https://pavan-chaganti.github.io/playwright/playwright-report/index.html"
+          echo "Playwright HTML Reporter: https://pavan-chaganti.github.io/playwright/playwright-html-report/index.html"
+          echo "Allure: https://pavan-chaganti.github.io/playwright/allure-report/index.html"
