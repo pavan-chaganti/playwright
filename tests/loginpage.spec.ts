@@ -22,7 +22,7 @@ async ({page, baseURL})=>{
     //AAA - arrange act assert
     let loginPage= new LoginPage(page);
     await loginPage.gotoLogInPage(baseURL);
-    await loginPage.doLogIn("test@12321.com","tess233");
+    await loginPage.doLogIn("test@12321.com","tess20033");
     const warningMSG=await loginPage.getinvalidLogInMessage();
     expect(warningMSG).toBe(" Warning: No match for E-Mail Address and/or Password.");
 });
