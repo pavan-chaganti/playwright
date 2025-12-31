@@ -2,10 +2,12 @@ import {test, expect} from "../fixtures/baseFixture"
 import {LoginPage} from '../pages/LoginPage'
 import { HomePage } from "../pages/HomePage";
 
-test("Verify Valid login @login @sanity",async ({homePage})=>{
+test("Verify Valid login @login @sanity",async ({page, baseURL})=>{
 
     //AAA - arrange act assert
-    expect(homePage.page).toHaveTitle("My Account");
+    let loginPage= new LoginPage(page);
+    await loginPage.gotoLogInPage(baseURL);
+    const homePage:HomePage= await loginPage.doLogIn("pavan.chaganti@nal.com","pavan@123");
     expect(await homePage.isUserLoggedIn()).toBeTruthy();
 
 });
