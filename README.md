@@ -8,6 +8,8 @@ Welcome to the **PWFramework** automation project. Below you can find the latest
 
 [![Playwright Tests](https://github.com/pavan-chaganti/playwright/actions/workflows/playwright-run.yml/badge.svg)](https://github.com/pavan-chaganti/playwright/actions/workflows/playwright-run.yml)
 
+(https://github.com/pavan-chaganti/playwright/actions/workflows/manual-run.yml/badge.svg)](https://github.com/pavan-chaganti/playwright/actions/workflows/manual-run.yml)
+
 ---
 
 ## HTML Reports
