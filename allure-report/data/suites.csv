@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2161","Verify InValid login message @login @sanity","Google Chrome","Sat Jan 03 08:33:15 UTC 2026","failed","Sat Jan 03 08:33:18 UTC 2026","","loginpage.spec.ts","",""
+"","2559","Verify Valid login @login @sanity","Google Chrome","Sat Jan 03 08:33:11 UTC 2026","passed","Sat Jan 03 08:33:13 UTC 2026","","loginpage.spec.ts","",""

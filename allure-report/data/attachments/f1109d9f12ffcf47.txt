@@ -1,0 +1,4 @@
+Filled text : test@12321.com into element : locator('#input-email')
+Filled text : tess20033 into element : locator('#input-password')
+Clicked on element : locator('[value="Login"]')
+Invalid warning meassage  Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.
