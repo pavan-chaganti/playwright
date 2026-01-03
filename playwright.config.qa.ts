@@ -89,7 +89,6 @@ export default defineConfig({
        use: { 
         ...devices['Desktop Edge'], 
         channel: 'msedge',
-        viewport:null,
       launchOptions:{
         args:["--start-maximized"],
         ignoreDefaultArgs:['--window-size=1200,720'],
@@ -101,7 +100,6 @@ export default defineConfig({
        use: { 
         ...devices['Desktop Chrome'], 
         channel: 'chrome',
-        viewport:null,
         launchOptions:{
         args:["--start-maximized"],
         ignoreDefaultArgs:['--window-size=1200,720'],
