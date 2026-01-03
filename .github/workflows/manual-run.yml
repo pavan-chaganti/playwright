@@ -249,7 +249,7 @@ jobs:
           echo "🔹 Browser: $BROWSER"
           echo ""
           echo "🏠 Main Dashboard:"
-          echo "   https://pavan-chaganti.github.io/playwright/"
+          echo "   https://pavan-chaganti.github.io/playwright/index.html"
           echo ""
           echo "📊 ${ENV^^} Reports:"
           echo "   Playwright: https://pavan-chaganti.github.io/playwright/${ENV}/playwright-report/index.html"
