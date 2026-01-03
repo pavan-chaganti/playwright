@@ -1,0 +1,8 @@
+user name: pavan.chaganti@nal.com and password pavan.chaganti@nal.com
+Filled text : pavan.chaganti@nal.com into element : locator('#input-email')
+Filled text : pavan.chaganti@nal.com into element : locator('#input-password')
+Clicked on element : locator('[value="Login"]')
+search key : samsung
+Filled text : samsung into element : locator('[name="search"]')
+Clicked on element : locator('[class="fa fa-search"]')
+Clicked on element : getByRole('link', { name: 'Samsung Galaxy Tab 10.1' })
