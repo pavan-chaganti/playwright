@@ -9,7 +9,7 @@ const search =[
 
 for(const product of search){
 test(`verify product header ${product.productname}`,{
-    tag:['@product','@smoke','@sanity','@Regression'], 
+    tag:['@product','@smoke','@sanity','@Regression','@sample'], 
 annotation:[
 {type:'EPIC', description:''},
 {type:'feature',description:''},
