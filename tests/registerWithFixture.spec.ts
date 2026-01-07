@@ -1,9 +1,9 @@
-import {test,expect} from "../fixtures/dataFixtures";
+import {test,expect} from '../fixtures/dataFixtures';
 
 //radom email id
     function getRnadomEmail():string{
-        let random =Math.random().toString(36).substring(2,9);
-        return `Auto_${random}@gmail.com`
+        const random =Math.random().toString(36).substring(2,9);
+        return `Auto_${random}@gmail.com`;
     }
  
     test.describe(async()=>{
@@ -11,7 +11,7 @@ import {test,expect} from "../fixtures/dataFixtures";
     })
 
 //method1:
- test(`Registrations user with csv2`, async({regData,page})=>{
+ test('Registrations user with csv2', async({regData,page})=>{
      for(const user of regData){
           //sequential code executions
      }

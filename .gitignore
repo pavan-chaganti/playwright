@@ -9,3 +9,4 @@ node_modules/
 /playwright/.auth/
 /allure-report/
 /allure-results/
+/eslint-report/

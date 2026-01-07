@@ -1,6 +1,6 @@
-import {test as base, expect } from "@playwright/test";
-import {HomePage} from "../pages/HomePage"
-import { LoginPage } from "../pages/LoginPage";
+import {test as base, expect } from '@playwright/test';
+import {HomePage} from '../pages/HomePage';
+import { LoginPage } from '../pages/LoginPage';
 
 type myFixtures={
     homePage:HomePage;
@@ -16,5 +16,5 @@ export const test =base.extend<myFixtures>({
         expect(( homePage).isUserLoggedIn()).toBeTruthy();
         await use( homePage);
     }
-})
+});
 export {expect};

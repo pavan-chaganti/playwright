@@ -1,5 +1,5 @@
-import {Locator, Page} from "@playwright/test";
-import {ElementUtil} from "../utils/ElementUtil";
+import {Locator, Page} from '@playwright/test';
+import {ElementUtil} from '../utils/ElementUtil';
 export class ProductInfoPage{
 
     //1.page /Object.OR
@@ -9,16 +9,16 @@ export class ProductInfoPage{
     private readonly imgCount:Locator;
     private readonly productMetaData:Locator;
     private readonly productPriceData:Locator;
-    private readonly productMap= new Map<string, string | null|number>
+    private readonly productMap= new Map<string, string | null|number>();
     
     //2.page class constructor
     constructor(page:Page){
         this.page=page;
         this.eleUtil=new ElementUtil(page);
-        this.header=page.locator("h1");
-        this.imgCount=page.locator(`[class="thumbnails"] li`);
-        this.productMetaData=page.locator(`(//div[@id="content"]//ul[@class="list-unstyled"])[1]/li`);
-        this.productPriceData=page.locator(`(//div[@id="content"]//ul[@class="list-unstyled"])[2]/li`);
+        this.header=page.locator('h1');
+        this.imgCount=page.locator('[class="thumbnails"] li');
+        this.productMetaData=page.locator('(//div[@id="content"]//ul[@class="list-unstyled"])[1]/li');
+        this.productPriceData=page.locator('(//div[@id="content"]//ul[@class="list-unstyled"])[2]/li');
     }
 
     //3. page actions / methods
@@ -37,8 +37,8 @@ export class ProductInfoPage{
 
     private async getProductMetaData(){
         const metaData:string[]=await this.productMetaData.allInnerTexts();
-        for(let data of metaData){
-            const info:string[]=data.split(":");
+        for(const data of metaData){
+            const info:string[]=data.split(':');
             const key= info[0].trim();
             const value= info[1].trim();
             this.productMap.set(key,value);
@@ -48,15 +48,15 @@ export class ProductInfoPage{
      private async getProductPriceData(){
         const pData:string[]=await this.productPriceData.allInnerTexts();
             const productPrice:string=pData[0].trim();
-            const productPriceExTx:string[]= pData[1].split(":");
-            this.productMap.set("price",productPrice);
+            const productPriceExTx:string[]= pData[1].split(':');
+            this.productMap.set('price',productPrice);
             this.productMap.set(productPriceExTx[0].trim(),productPriceExTx[1].trim());
         
     }
 
     async getProductDetails():Promise<Map<string, string | null|number>>{
-        this.productMap.set("header", await this.getProductHeader());
-        this.productMap.set("imageCount", (await this.getProductimgCount()));
+        this.productMap.set('header', await this.getProductHeader());
+        this.productMap.set('imageCount', (await this.getProductimgCount()));
         await this.getProductMetaData();
         await this.getProductPriceData();
         console.log(`Full prodcut details: ${this.productMap}`);
@@ -65,7 +65,7 @@ export class ProductInfoPage{
     }
 
     private printProductInfo(){
-        for(let [key, value] of this.productMap){
+        for(const [key, value] of this.productMap){
             console.log(key, value);
         }
     }

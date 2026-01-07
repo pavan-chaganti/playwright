@@ -23,12 +23,12 @@ private readonly eleUtil:ElementUtil;
 constructor(page:Page){
     this.page=page;
     this.eleUtil=new ElementUtil(page);
-    this.firstNameInput=page.getByRole("textbox",{name:"First Name"});
-    this.lastNameInput=page.getByRole("textbox",{name:"Last Name"});
-    this.emailInput=page.getByRole("textbox",{name:"E-Mail"});
-    this.telephoneInput=page.getByRole("textbox",{name:"Telephone"});
-    this.passwordInput=page.getByRole("textbox",{name:"Password"});
-    this.confirmPasswordInput=page.getByRole("textbox",{name:"Password Confirm"});
+    this.firstNameInput=page.getByRole('textbox',{name:'First Name'});
+    this.lastNameInput=page.getByRole('textbox',{name:'Last Name'});
+    this.emailInput=page.getByRole('textbox',{name:'E-Mail'});
+    this.telephoneInput=page.getByRole('textbox',{name:'Telephone'});
+    this.passwordInput=page.getByRole('textbox',{name:'Password'});
+    this.confirmPasswordInput=page.getByRole('textbox',{name:'Password Confirm'});
     this.newsletterYesRadio = page.getByRole('radio', { name: 'Yes' });
         this.newsletterNoRadio = page.getByRole('radio', { name: 'No' });
         this.agreeCheckbox = page.locator('[name="agree"]');
@@ -53,7 +53,7 @@ async registerUser(
         await this.eleUtil.fill(this.passwordInput, password);
         await this.eleUtil.fill(this.confirmPasswordInput, password);
 
-        if (subscribeNewsletter === "Yes") {
+        if (subscribeNewsletter === 'Yes') {
             await this.eleUtil.click(this.newsletterYesRadio);
         } else {
             await this.eleUtil.click(this.newsletterNoRadio);

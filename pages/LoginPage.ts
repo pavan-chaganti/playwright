@@ -1,7 +1,7 @@
 import {Locator, Page} from '@playwright/test';
-import {ElementUtil} from '../utils/ElementUtil'
-import {HomePage} from "../pages/HomePage";
-import {RegisterPage} from "../pages/RegisterPage"
+import {ElementUtil} from '../utils/ElementUtil';
+import {HomePage} from '../pages/HomePage';
+import {RegisterPage} from '../pages/RegisterPage';
 export class LoginPage{
     //1. page locators/Objects/OR:
     private readonly page:Page;
@@ -20,8 +20,8 @@ export class LoginPage{
         
 this.page=page;
 this.eletUtil=new ElementUtil(page);
-this.emailId=page.locator("#input-email");
-this.password=page.locator("#input-password");
+this.emailId=page.locator('#input-email');
+this.password=page.locator('#input-password');
 this.logBtn=page.locator('[value="Login"]');
 this.warningMSG=page.locator('[class="alert alert-danger alert-dismissible"]');
 this.registrationLink=page.getByText('Register',{exact: true});    
@@ -32,7 +32,7 @@ this.registrationLink=page.getByText('Register',{exact: true});
  * 
  */
  async gotoLogInPage(baseURL:string| undefined){
-    await this.page.goto(baseURL+"?route=account/login");
+    await this.page.goto(baseURL+'?route=account/login');
  }
 /**
  * 
@@ -41,16 +41,16 @@ this.registrationLink=page.getByText('Register',{exact: true});
  * @returns 
  */
 async doLogIn(emailId:string,pw:string):Promise<HomePage>{
-await this.eletUtil.fill(this.emailId,emailId)
+await this.eletUtil.fill(this.emailId,emailId);
 await this.eletUtil.fill(this.password,pw);
-await this.eletUtil.click(this.logBtn,{force:true,timeout:5000})
+await this.eletUtil.click(this.logBtn,{force:true,timeout:5000});
 return new HomePage(this.page);
 }
 /**
  * 
  * @returns 
  */
-async getinvalidLogInMessage():Promise<String | null>{
+async getinvalidLogInMessage():Promise<string | null>{
    const errorMesg= await this.eletUtil.getText(this.warningMSG);
    console.log(`Invalid warning meassage ${errorMesg}`);
    return errorMesg;
