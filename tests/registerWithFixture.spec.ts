@@ -8,7 +8,7 @@ import {test,expect} from '../fixtures/dataFixtures';
  
     test.describe(async()=>{
         let data:any[];
-    })
+    });
 
 //method1:
  test('Registrations user with csv2', async({regData,page})=>{

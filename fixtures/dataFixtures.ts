@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 import {test as base,expect} from '@playwright/test';
 import fs from 'fs';
 import {parse} from 'csv-parse/sync';
