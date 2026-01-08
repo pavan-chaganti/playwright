@@ -62,7 +62,7 @@ pipeline {
                 echo '============================================'
                 echo '📁 Creating ESLint report directory...'
                 echo '============================================'
-                bat 'mkdir eslint-report'
+                bat 'if not exist eslint-report mkdir eslint-report'
 
                 echo '============================================'
                 echo '🔍 Running ESLint...'
