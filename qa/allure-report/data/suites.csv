@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jan 08 08:19:51 UTC 2026","Thu Jan 08 08:19:56 UTC 2026","4833","","","","","","[QA] verify product header Samsung Galaxy Tab 10.1",""
+"passed","Thu Jan 08 08:20:12 UTC 2026","Thu Jan 08 08:20:16 UTC 2026","4712","","","","","","[QA] verify product header MacBook Air",""
+"passed","Thu Jan 08 08:19:25 UTC 2026","Thu Jan 08 08:19:36 UTC 2026","10999","","","","","","[QA] verify product header MacBook Pro",""
+"passed","Thu Jan 08 08:20:01 UTC 2026","Thu Jan 08 08:20:06 UTC 2026","5235","","","","","","[QA] verify product header MacBook Pro",""
+"passed","Thu Jan 08 08:19:56 UTC 2026","Thu Jan 08 08:20:00 UTC 2026","4460","","","","","","[QA] verify product header MacBook Air",""
+"passed","Thu Jan 08 08:20:07 UTC 2026","Thu Jan 08 08:20:12 UTC 2026","4734","","","","","","[QA] verify product header Samsung Galaxy Tab 10.1",""

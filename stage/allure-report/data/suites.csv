@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jan 08 08:21:37 UTC 2026","Thu Jan 08 08:21:42 UTC 2026","5358","","","","","","[STAGE] verify product header MacBook Air",""
+"passed","Thu Jan 08 08:21:32 UTC 2026","Thu Jan 08 08:21:37 UTC 2026","4891","","","","","","[STAGE] verify product header Samsung Galaxy Tab 10.1",""
+"passed","Thu Jan 08 08:21:26 UTC 2026","Thu Jan 08 08:21:32 UTC 2026","6008","","","","","","[STAGE] verify product header MacBook Pro",""
